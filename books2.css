@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+
+body {
+    font-size: 14;
+    font-family: 'Noto Sans', sans-serif;
+    max-width: 960px;
+}
+header {
+    height: 100px;
+    padding:6px 20px  0  20px;
+    display:grid;
+}
+.wrapper {
+  width: 100%;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+#alert {
+    padding-top: 33px;
+    text-align: center;
+    color: #1c87c9;
+    font-weight: bold;
+  }
+ 
+ .openBtn {
+    display: grid;
+    grid-column: 3;
+    padding: 15px 20px 0 20px;
+  }
+
+ 
+.booktable{
+    table-layout: fixed;
+    
+    border-collapse: collapse;
+    border-spacing: 20px;
+  }
+  
+ th, td {
+    text-align: left;
+    border-bottom: 1px solid black;
+  }
+
+tr{
+    line-height: 50px;
+    width: 100%;
+  }
+tbody{
+  width: 100%;
+}
+
+.ugh{
+  width:100%;
+}
+
+.deletebook{
+    background-color: #cc0000;
+    padding: 10px;
+    text-align: center;
+    border:none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    height: 30px;
+    opacity: 0.8;
+}
+  
+.pressifread{
+    background-color: #8ebf42;
+    padding: 10px;
+    text-align: center;
+    border:none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    height: 30px;
+    opacity: 0.8;
+  }
+ 
+  .pressifread:hover{
+      opacity: 1;
+  }
+
+  .deletebook:hover{
+     opacity: 1;
+  }
+  
+  .fixedbutton {
+    width: 100px;
+  }
+
+/* Form styling */  
+  * {
+    box-sizing: border-box;
+  }
+  .openButton {
+    border: none;
+    border-radius: 5px;
+    background-color: #3C9EE7;
+    color: white;
+    padding: 14px 20px;
+    cursor: pointer;
+    position: fixed;
+  }
+  .enterBookPopup {
+    position: relative;
+    text-align: center;
+    width: 100%;
+  }
+  .formPopup {
+    display: none;
+    position: fixed;
+    left: 45%;
+    top: 5%;
+    transform: translate(-50%, 5%);
+    border: 3px solid #999999;
+    z-index: 9;
+  }
+  .formContainer {
+    max-width: 300px;
+    padding: 20px;
+    background-color: #fff;
+  }
+  .formContainer input[type=text]{
+    width: 90%;
+    padding: 15px;
+    margin: 5px 0 20px 0;
+    border: none;
+    background: #eee;
+  }
+  .formContainer input[type=text]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+  .formContainer .btn {
+    padding: 12px 20px;
+    border: none;
+    background-color: #8ebf42;
+    color: #fff;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 15px;
+    opacity: 0.8;
+  }
+  .formContainer .cancel {
+    background-color: #cc0000;
+  }
+  .formContainer .btn:hover,
+  .openButton:hover {
+    opacity: 1;
+  }
